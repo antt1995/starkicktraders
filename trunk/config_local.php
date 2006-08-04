@@ -1,13 +1,13 @@
 <?php
 
-// Path on the filesystem where the blacknova files
+// Path on the filesystem where the source files
 // will reside:
 $gameroot = "/home/bengibbs/public_html/skt";
 
-// The ADOdb db module is now required to run BNT. You
-// can find it at http://php.weblogs.com/ADODB. Enter the
+// The ADOdb db module is now required. You
+// can find it at http://adodb.sourceforge.net/. Enter the
 // path where it is installed here. I suggest simply putting
-// every ADOdb file in a subdir of BNT.
+// every ADOdb file in a subdir.
 $ADOdbpath = "/home/bengibbs/public_html/skt/adodb";
 
 // Domain & path of the game on your webserver (used to validate login cookie)
@@ -21,7 +21,7 @@ $gamedomain = ".sktsource.com";
 
 // This is the trailing part of the URL, that is not part of the domain.
 // If you enter www.blah.com/blacknova to access the game, you would leave the line as it is.
-// If you do not need to specify blacknova, just enter a single slash eg:
+// If you do not need to specify the domain, just enter a single slash eg:
 // $gamepath = "/";
 $gamepath = "/skt/";
 
@@ -33,11 +33,11 @@ $dbhost = "localhost";
 $dbport = "";
 
 // Username and password to connect to the database:
-$dbuname = "bengibbs_skt";
-$dbpass = "botbotbot";
+$dbuname = "username";
+$dbpass = "password";
 
 // Name of the SQL database:
-$dbname = "bengibbs_skt";
+$dbname = "skt";
 
 // Type of the SQL database. This can be anything supported by ADOdb. Here are a few:
 // "access" for MS Access databases. You need to create an ODBC DSN.
@@ -65,7 +65,7 @@ $db_prefix = "skt1_";
 
 // Administrator's password and email:
 // Be sure to change these. Don't leave them as is.
-$adminpass = "botbotbot";
+$adminpass = "changethis";
 $admin_mail = "admin@sktsource.com";
 
 // Address the forum link, link's to:
